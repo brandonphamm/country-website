@@ -1,0 +1,497 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+    - Normalize
+    - Box sizing
+    - Media width
+# Base
+    - Typography
+    - Elements
+    - Links
+# Layouts
+# Components
+    - Header
+    - Main
+    - Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+
+/* Components */
+.site-wrapper{ 
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Typography
+--------------------------------------------- */
+body {
+    font-family: 'Roboto', 'Times New Roman', Times, serif, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #282828;
+    background-color: #fefefe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Times, "Times New Roman", serif;
+    margin: .5em 0;
+    font-size: 1.75rem;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+/* Links
+--------------------------------------------- */
+
+a:hover {
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+/* Navigation Menu */
+.site-navigation ul
+{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.58);
+    margin-top: 0rem;
+    font-size: 3rem;
+    padding-right: 40px;
+
+}
+
+.site-navigation a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* Favcion Logo */
+.favion-logo {
+    height: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-right: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -1rem;
+}
+
+/* Main
+--------------------------------------------- */
+
+.video1 {
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page-introduction h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+    
+}
+
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+    padding-top: 1rem;
+}
+
+/* Desktop Version For Nav and Favicon */
+@media (min-width: 50rem) 
+    {.site-navigation a {
+       font-size: 2rem;
+       
+        }
+        
+        .site-navigation ul {
+            display: flex;
+            justify-content:flex-end;
+            position: fixed;
+        }   
+
+        /* Favicon Logo */
+        .favion-logo {
+            height: 5rem;
+            position: fixed;
+            right: 100rem;
+            top: 0rem;
+        }
+
+        .page-introduction h1 {
+            font-size: 5rem;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+            margin: 0;
+            color: #ffffff;
+            text-transform: uppercase;
+    }
+    
+}
+
+/* Food Page
+--------------------------------------------- */
+
+/* Main
+--------------------------------------------- */
+
+.video2 {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom:2rem;
+
+}
+
+
+.food-intro h1 {
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+    
+}
+
+.food-main img{
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    display: block; /* Change to block display */
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #3498db; /* Border color */
+    padding: 5px; /* Add padding for spacing inside the border */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background-color: #f2f2f2; /* Background color for a subtle effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    
+}
+
+.food-main p {
+    padding-left:1rem;
+    padding-right:1rem;
+    text-align: center;
+
+    border: 2px solid #3498db; /* Border color */
+    padding: 15px; /* Add padding for spacing inside the border */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background-color: #f2f2f2; /* Background color for a subtle effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.food-main{
+    background-color: #f2f2f2; /* Background color for a subtle effect */   
+}
+
+.food-main p {
+    margin-bottom: 0.1rem;
+}
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 1rem;
+    text-align: center;
+    /* margin-top: 0.5rem; */
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+    padding-top: 1rem;
+} 
+
+/* Desktop Version 
+--------------------------------------------- */
+
+@media (min-width: 50rem) {
+    img.onigiri {
+        display: block;
+        position: static;
+    }
+    .food-main img{
+        width: 50%;
+        display: block;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .food-main p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .food-main h2 {
+        text-align: center;
+    }
+
+    .food-main p {
+        margin-bottom: 5rem;
+    }
+
+    .food-main{
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px; /* Border radius for rounded corners */
+        background-color: #f2f2f2; /* Background color for a subtle effect */   
+    }
+    .food-intro h1 {
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+    }
+    .takoyaki p {
+        margin-bottom: 0.1rem;
+    }
+}
+
+
+
+
+/* Gallery Page
+--------------------------------------------- */
+
+
+
+/* Main
+--------------------------------------------- */
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+.gallery-section img {
+    border: 2px solid #3498db; /* Border color */
+    padding: 15px; /* Add padding for spacing inside the border */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background-color: #f2f2f2; /* Background color for a subtle effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.gallery-main {
+    background-color: #f2f2f2;
+}
+
+.video3 {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom:2rem;
+
+}
+
+.gallery-intro h1 {
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+}
+
+.japan-6 {
+    margin-bottom: -1.4rem;
+}
+
+
+/* Desktop Version
+--------------------------------------------- */
+@media (min-width: 50rem) {
+    .gallery-intro h1 {
+        font-size: 5rem;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+        margin: 0;
+        color: #ffffff;
+        text-transform: uppercase;
+        backdrop-filter: blur(5px);
+        }
+
+    .gallery-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 3rem
+
+    }
+    .gallery-section img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-main {
+        background-color: #f2f2f2;
+    }
+    .japan-5, .japan-6 {
+        margin-bottom: -3rem;
+    }
+}
+
+/* Credits Page
+--------------------------------------------- */
+
+
+/* Main
+--------------------------------------------- */
+.video4 {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom:2rem;
+}
+
+.credit-section li {
+    list-style: none;
+    text-align: center;
+    line-height: 3rem;
+    padding-inline-end: 40px;
+}
+
+
+
+.credit-section h2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    
+}
+
+.credit-section {
+    background-color: #f2f2f2;
+}
+
+.block-quote {
+    text-align: center;
+    margin-bottom: 5rem;
+    
+}
+
+.block-quote h3 {
+        font-size: 1rem;
+}
+
+.credit-section a:visited {
+    color: black;
+}
